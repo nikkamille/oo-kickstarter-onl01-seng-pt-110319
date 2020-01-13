@@ -2,10 +2,10 @@ class Project
   
   # Project can have many backers.
   
-  attr_reader :backers
+  attr_reader :backers, :title
   
-  def initialize(name)
-    @name = name
+  def initialize(title)
+    @title = title
     @backers = []
   end
   
